@@ -1,0 +1,149 @@
+<div class="container text-center">
+  <button class="btn btn-primary mb-5 shadow border" (click)="dowwnloadFile()">
+    Download PDF Resume
+  </button>
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isWorkExperienceOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Work Experience</div>
+          <div style="width: 10.95px">
+            @if (!isWorkExperienceOpen) {
+            <div style="color: white">></div>
+            } @if (isWorkExperienceOpen) {
+            <div style="color: white">v</div>
+
+            }
+          </div>
+        </button>
+        <div style="text-align: left">
+          <h2 class="mb-0">Junior Developer</h2>
+          <h3 class="text-primary">Libra Development</h3>
+          <ul>
+            <li>
+              Assisted in creating simple, responsive layouts using HTML and
+              basic CSS.
+            </li>
+            <li>
+              Worked with senior developers to implement design changes and
+              ensure consistency across pages.
+            </li>
+            <li>
+              Fixed minor styling issues and helped maintain a clean and
+              organized codebase.
+            </li>
+          </ul>
+        </div>
+        <div style="text-align: left">
+          <h2 class="mb-0">Junior Angular Developer</h2>
+          <h3 class="text-primary">Libra Development</h3>
+          <ul>
+            <li>
+              Assisted in developing basic components and services using Angular
+              framework.
+            </li>
+            <li>
+              Collaborated with senior developers to integrate APIs and display
+              data dynamically on the front end.
+            </li>
+            <li>
+              Fixed minor bugs and contributed to improving the performance of
+              existing Angular applications.
+            </li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isEducationOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Education</div>
+          <div style="width: 10.95px">
+            @if (!isEducationOpen) {
+            <div style="color: white">></div>
+            } @if (isEducationOpen) {
+            <div style="color: white">v</div>
+
+            }
+          </div>
+        </button>
+        <div style="text-align: left">
+          <h2 class="mb-0">Criminal Forensic Studies</h2>
+          <h3 class="text-primary">
+            Bachelor's Program, Criminal-Police Academy
+          </h3>
+          <ul>
+            <li>
+              I studied Criminal-Forensic Science at the Police Academy,
+              focusing on crime investigation and forensic techniques.
+            </li>
+          </ul>
+        </div>
+        <div style="text-align: left">
+          <h2 class="mb-0">
+            Faculty of Information Technology and Informatics (FITI)
+          </h2>
+          <h3 class="text-primary">
+            Bachelor's in Information Technology (In Progress)
+          </h3>
+          <ul>
+            <li>
+              I started studying Information Technology and Informatics in 2021
+              but had to pause due to financial reasons and working abroad. I am
+              now resuming my studies while working.
+            </li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isSkillsOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Skills</div>
+          <div style="width: 10.95px">
+            @if (!isSkillsOpen) {
+            <div style="color: white">></div>
+            } @if (isSkillsOpen) {
+            <div style="color: white">v</div>
+
+            }
+          </div>
+        </button>
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h3>Programming Languages:</h3>
+            <ul>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Frameworks:</h3>
+            <ul>
+              <li>Angular</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Other Skills:</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Tailwind</li>
+              <li>Ionic</li>
+              <li>...</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg shadow m-1">
+      <div class="text-center">
+        <h2>About Me</h2>
+        <img
+          class="rounded-circle"
+          src="unnamed.jpg"
+          alt="profile picture"
+          width="256px"
+          height="256px"
+        />
+        <p>
+          I am a dedicated Junior Frontend Developer with expertise in HTML,
+          CSS, and Angular. With hands-on experience in creating web pages and
+          Angular components, I am currently expanding my skills by working on
+          Ionic mobile applications. My career goal is to continually grow and
+          contribute to innovative tech projects.
+        </p>
+      </div>
+    </div>
+    <div class="col-lg shadow m-1">
+      <div class="text-center">
+        <h2>Featured Project</h2>
+        <h4>{{ feturedProject.name }}</h4>
+        <carousel>
+          @for (photo of feturedProject.photos; track $index) {
+          <slide
+            ><img
+              src="{{ photo }}"
+              alt="slide"
+              style="display: block; width: 100%"
+          /></slide>
+          }
+        </carousel>
+        <p class="mt-2">{{ feturedProject.summary }}</p>
+        <p>Visit the Portfolio section to learn more.</p>
+      </div>
+    </div>
+  </div>
+</div>
